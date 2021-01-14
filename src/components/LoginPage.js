@@ -30,6 +30,10 @@ class LoginPage extends Component {
           )
           }
         </div>
+        <p classNames="">
+          Images used from &nbsp;
+          <a href="https://uifaces.co/" target="_blank" rel="noopener noreferrer">uifaces.co</a>
+        </p>
       </div>
     );
   }
