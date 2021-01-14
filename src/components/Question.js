@@ -63,7 +63,7 @@ class Question extends Component {
     const type = location.split("/").slice(-1)[0]
     return (
       <div
-        className={`question-item ${type === "create" ? "is-createnew" : ""}`}>
+        className={`question-item ${type === "add" ? "is-createnew" : ""}`}>
         <div className="user-info">
           <h3>
             {question ? users[question.author].name : users[loggedInUser].name} asks
@@ -84,7 +84,7 @@ class Question extends Component {
                 : <QuestionsAnswered
                   answered={answered}
                   id={id} />
-              : type === "create"
+              : type === "add"
                 ? <CreateForm
                   handleCreateQuestion={this.handleCreateQuestion}
                   firstOption={firstOption}

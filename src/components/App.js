@@ -58,7 +58,7 @@ class App extends Component {
                           path="/questions/:id"
                           component={(props) => <QuestionDetails {...props} answeredQuestionIds={answeredQuestionIds} unansweredQuestionIds={unansweredQuestionIds}/>}/>
             <Routes isLoggedin={loggedInUser !== null}
-                          path="/create"
+                          path="/add"
                           component={Question}/>
             <Routes isLoggedin={loggedInUser !== null}
                           path="/leaderboard"

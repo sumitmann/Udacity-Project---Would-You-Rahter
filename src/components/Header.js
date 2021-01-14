@@ -18,7 +18,7 @@ class Header extends Component {
         <h2 className="header-title">{users[loggedInUser].name}</h2>
         <nav className="main-nav">
           <NavLink to="/questions" className="main-nav-link numorphic-shadow is-small" activeClassName="is-active">Home</NavLink>
-          <NavLink to="/create" className="main-nav-link numorphic-shadow is-small" activeClassName="is-active">Create Question</NavLink>
+          <NavLink to="/add" className="main-nav-link numorphic-shadow is-small" activeClassName="is-active">Create Question</NavLink>
           <NavLink to="/leaderboard" className="main-nav-link numorphic-shadow is-small" activeClassName="is-active">Leadersboard</NavLink>
           <a className="main-nav-link numorphic-shadow is-small" onClick={this.handleLogout}>Logout</a>
         </nav>
